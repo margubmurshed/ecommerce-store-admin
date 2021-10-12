@@ -1,0 +1,39 @@
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
+.icon-btn {
+    color: #fff !important;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        width: 100%;
+    }
+    .content {
+        margin-left: 0px;
+    }
+    .big-navbar {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: fixed;
+        width: 300px;
+    }
+    .small-navbar {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+    .content {
+        margin-left: 300px !important;
+    }
+}
